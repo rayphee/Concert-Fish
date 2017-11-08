@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <script src="//use.typekit.net/hzh0adl.js"></script>
+        <script>try{Typekit.load();}catch(e){}</script>
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="js/jquery.gsap.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/mainscript.js"></script>
+        <script src="js/slider.js"></script>
+        <title>Concert.fish | Music as it's made</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta name="description" content="Music as it's made" />
+      </head>
+      <video id="my-video" class="video" autoplay="autoplay" loop="loop" muted="" width="300" height="150">
+        <source src="home-videos/concert.mp4" type="video/mp4" />
+      </video>
+      <div class="gradient">
+      </div>
+        <div class="content">
+          <div class="ring">
+            <div class="knob">
+              <div class="halves" id="left">
+                <form style="position:absolute;text-align:right;top:7.5vw;left:5vw;font-size:1.25vw;"class="registration-form" method="post" action="create.php">
+                    <input class="unity" style="font-size:1.5vw; width:10vw; height:2vw;" type="textbox" name="concert" placeholder="Concert Name"><br><br>
+                    What are you playing?<br>
+                      <select class="unity">
+                        <option value="blues">Blues</option>
+                        <option value="classical">Classical</option>
+                        <option value="country">Country</option>
+                        <option value="electronic">Electronic</option>
+                        <option value="folk">Folk</option>
+                        <option value="hiphop">Hip-Hop</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="reggae">Reggae</option>
+                        <option value="rock">Rock</option>
+                        <option value="traditional">Traditional</option>
+                      </select><br><br>
+                    How much is entry?<br>
+                    $ <input class="unity" type="number" name="price" min="0.00" step="0.25" max="2500" value="0"><br><br>
+                    Keep this private
+                    <label class="switch">
+                      <input type="checkbox" name="private">
+                      <div class="slider round"></div>
+                    </label><br><br>
+                    <input class="button" type="submit" value="Create a Concert">
+                </form>
+                <div class="quarters" id="create">
+                  <a><br></a>
+                </div>
+                <div class="quarters" id="left-label">
+                  <a style="margin-left:6vw;"><br></a>
+                </div>
+              </div>
+              <div class="results-container">
+                <div class="results">
+                  <h1 style="text-align:center;">Concerts Live Now</h1>
+                  <div>
+                    <div class="concert-container">
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/vicetone.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Vicetone</span><br><input class="button-small" type="submit" value="Join">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/tiesto.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Tiesto</span><br><input class="button-small" type="submit" value="Join">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/ingrosso.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Sebastian Ingrosso</span><br><input class="button-small" type="submit" value="Join">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/rocky.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">A$AP Rocky</span><br><input class="button-small" type="submit" value="Request">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/wayne.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Lil' Wayne</span><br><input class="button-small" type="submit" value="Request">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/mercury.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Freddie Mercury</span><br><input class="button-small" type="submit" value="Join">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/mane.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Gucci Mane</span><br><input class="button-small" type="submit" value="Request">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/codes.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Cheat Codes</span><br><input class="button-small" type="submit" value="Request">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/allen.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Lily Allen</span><br><input class="button-small" type="submit" value="Join">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/harris.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Calvin Harris</span><br><a href="calvin.html"><input class="button-small" type="submit" value="Join"></a>
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/drake.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Drake</span><br><input class="button-small" type="submit" value="Request">
+                        </div>
+                        <div class="concert-slide">
+                            <div class="concert-photo">
+                                <img src="resource-images/mills.png" style="height:4.5vw;text-align:center;">
+                            </div>
+                            <span class="concert-name">Meek Milllls</span><br><input class="button-small" type="submit" value="Join">
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="halves" id="right">
+                <form style="position:absolute;text-align:left;top:8.5vw;right:8vw;font-size:1.25vw;" class="registration-form" action="#">
+                    <h2>Find a Concert</h2><br>
+                    By Genre<br>
+                      <select class="unity">
+                        <option value="ai">AI Music</option>
+                        <option value="blues">Blues</option>
+                        <option value="classical">Classical</option>
+                        <option value="country">Country</option>
+                        <option value="electronic">Electronic</option>
+                        <option value="folk">Folk</option>
+                        <option value="hiphop">Hip-Hop</option>
+                        <option value="jazz">Jazz</option>
+                        <option value="reggae">Reggae</option>
+                        <option value="rock">Rock</option>
+                        <option value="traditional">Traditional</option>
+                      </select><br><br>
+                    By Search<br>
+                    <input class="unity" type="textbox" name="search" placeholder="Search"><br><br>
+                    <input class="button" style="font-weight:200;font-size:1.25vw;" type="submit" value="Go" id="open">
+                </form>
+                  <div class="quarters" id="right-label">
+                    <a style="margin-left:2.5vw;"><br></a>
+                  </div>
+                  <div class="quarters" id="options">
+                    <a><br></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <footer>
+            <div style="text-align:center;margin-left:auto;margin-right:auto;position:relative;">
+              <img style="width:2.5vw;height:auto;" src="resource-images/concert-fish.png"><br>
+              Concert.fish
+            </div>
+          </footer>
+    </body>
+</html>

@@ -1,0 +1,585 @@
+@font-face {
+  font-family: 'myriad_set_proultralight';
+  src: url('fonts/myriad_set_pro_100_ultralight-webfont.eot');
+  src: url('fonts/myriad_set_pro_100_ultralight-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/myriad_set_pro_100_ultralight-webfont.woff2') format('woff2'), url('fonts/myriad_set_pro_100_ultralight-webfont.woff') format('woff'), url('fonts/myriad_set_pro_100_ultralight-webfont.ttf') format('truetype'), url('fonts/myriad_set_pro_100_ultralight-webfont.svg#myriad_set_proultralight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('fonts/MyriadPro-Regular.otf');
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes colors {
+  0% {
+    background-color: red;
+  }
+  12% {
+    background-color: purple;
+  }
+  37% {
+    background-color: green;
+  }
+  62% {
+    background-color: yellow;
+  }
+  88% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@-webkit-keyframes colors {
+  0% {
+    background-color: red;
+  }
+  12% {
+    background-color: purple;
+  }
+  37% {
+    background-color: green;
+  }
+  62% {
+    background-color: yellow;
+  }
+  88% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@-moz-keyframes colors {
+  0% {
+    background-color: red;
+  }
+  12% {
+    background-color: purple;
+  }
+  37% {
+    background-color: green;
+  }
+  62% {
+    background-color: yellow;
+  }
+  88% {
+    background-color: blue;
+  }
+  100% {
+    background-color: red;
+  }
+}
+@keyframes colorsR {
+  0% {
+    background-color: purple;
+  }
+  12% {
+    background-color: green;
+  }
+  37% {
+    background-color: yellow;
+  }
+  62% {
+    background-color: blue;
+  }
+  88% {
+    background-color: red;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+@-webkit-keyframes colorsR {
+  0% {
+    background-color: purple;
+  }
+  12% {
+    background-color: green;
+  }
+  37% {
+    background-color: yellow;
+  }
+  62% {
+    background-color: blue;
+  }
+  88% {
+    background-color: red;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+@-moz-keyframes colorsR {
+  0% {
+    background-color: purple;
+  }
+  12% {
+    background-color: green;
+  }
+  37% {
+    background-color: yellow;
+  }
+  62% {
+    background-color: blue;
+  }
+  88% {
+    background-color: red;
+  }
+  100% {
+    background-color: purple;
+  }
+}
+* {
+  margin: 0;
+  border: 0;
+  list-style-type: none;
+  outline: none;
+}
+html {
+  font-family: 'proxima-nova';
+}
+body {
+  background-color: black;
+  overflow:hidden;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+div.navbar-brand:hover {
+  background-color: rgba(10, 150, 255,1);
+  cursor: pointer;
+  -o-transition:background-color .25s ease-out, color .25s ease-out;
+  -ms-transition:background-color .25s ease-out, color .25s ease-out;
+  -moz-transition:background-color .25s ease-out, color .25s ease-out;
+  -webkit-transition:background-color .25s ease-out, color .25s ease-out;
+  transition:background-color .25s ease-out, color .25s ease-out;
+}
+div.reset:hover {
+  -webkit-animation: colorsR 5s infinite ease-in;
+  -moz-animation: colorsR 5s infinite ease-in;
+  animation: colorsR 5s infinite ease-in;
+  animation-fill-mode: forwards ease-in;
+  cursor: pointer;
+}
+.navbar-brand {
+  border: 10px;
+}
+
+container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.element {
+  display: inline;
+  font-family: 'proxima-nova', helvetica;
+  width:150px;
+  color:rgba(255,255,255,0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+section{
+  font-family: 'proxima-nova', helvetica;
+  color:white;
+  position: fixed;
+  top:0;
+  right:0;
+  width:300;
+}
+marquee{
+  width:300px;
+}
+marquee span{
+  color:red;
+}
+video{
+  height: 100vh;
+  width: inherit;
+  z-index: -10;
+  left:0;
+  top:0;
+  position:absolute;
+}
+.navbar {
+  position: fixed;
+  bottom:0;
+  right:0;
+  height: 60px;
+  width: 300px;
+  background-color: #696969;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-top: 2.5px solid rgba(255,255,255,0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.output {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+  font-family: 'proxima-nova';
+}
+.chart {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+ol {
+  padding: 0px;
+  height: 110px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100px;
+}
+.chatboxcontainer{
+  background-color: rgba(255,255,255,0.2);
+  height:100%;
+  width:300px;
+  position: fixed;
+  right:0;
+  /*-webkit-backdrop-filter: blur(10px);*/
+  backdrop-filter: blur(10px);
+}
+.chatbox{
+  overflow-y: scroll;
+  position: fixed;
+  width: 300px;
+  height: 95%;
+  right:0;
+  bottom:0;
+  color:rgba(255,255,255,0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+::-webkit-scrollbar {
+      width: 10px;
+} /* this targets the default scrollbar (compulsory) */
+::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0,.5);
+} /* the new scrollbar will have a flat appearance with the set background color */
+
+::-webkit-scrollbar-thumb {
+      background-color: rgba(10, 150, 255,.5);
+} /* this will style the thumb, ignoring the track */
+
+::-webkit-scrollbar-button {
+      background-color: #7c2929;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+
+::-webkit-scrollbar-corner {
+      background-color: black;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+.form-group{
+  width: 150px;
+}
+.home{
+  position: fixed;
+  bottom:1.3vw;
+  left:1.9vw;
+  width:inherit;
+  height:inherit;
+  color:rgba(255,255,255,0.5)
+  -o-transition:background-color .25s ease-out, color .25s ease-out;
+  -ms-transition:background-color .25s ease-out, color .25s ease-out;
+  -moz-transition:background-color .25s ease-out, color .25s ease-out;
+  -webkit-transition:background-color .25s ease-out, color .25s ease-out;
+  transition:background-color .25s ease-out, color .25s ease-out;
+}
+.home:hover{
+  color:rgba(10, 150, 255,.5)
+}
+ul {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  ;
+  padding-left: 0px;
+}
+li {
+  padding-left: 30px;
+  padding-right: 0px;
+}
+.element br {
+  display: none
+}
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s 8;
+  -moz-animation: blink 0.7s 8;
+  animation: blink 0.7s 8;
+  animation-fill-mode: forwards;
+}
+section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.keynav {
+  display:none;
+  flex-direction: row;
+}
+.keyelem {
+  display: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.key {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  font-family: 'proxima-nova'
+}
+footer {
+  display: none;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.hide {
+  display: none;
+  color: white;
+}
+.spacer {
+  width: auto;
+  height: 70px;
+}
+div.navbar-brand {
+  background-color: gray;
+  height: 60px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+div.reset {
+  background-color: purple;
+  height: 60px;
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Watson {
+  font-family: "proxima-nova";
+  font-size: 10px;
+  -o-transition:background-color .25s ease-out, color .25s ease-out;
+  -ms-transition:background-color .25s ease-out, color .25s ease-out;
+  -moz-transition:background-color .25s ease-out, color .25s ease-out;
+  -webkit-transition:background-color .25s ease-out, color .25s ease-out;
+  transition:background-color .25s ease-out, color .25s ease-out;
+}
+div.Watson:hover{
+  cursor:pointer;
+}
+span {
+  font-family: "HelveticaNeueBold", "HelveticaNeue-Bold", "Helvetica Neue Bold";
+}
+.mobile {
+  width: 30px;
+  height: 30px;
+}
+.number {
+  text-align: center;
+}
+.bar {
+  height: 30px;
+  transition: .5s;
+}
+.hover {
+  height: 50px;
+  transition: .5s;
+}
+
+.nhide {
+  color: transparent;
+  transition: .5s;
+}
+.show {
+  color: black;
+  transition: .5s;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 0;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    overflow-y: hidden;
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 15%; /* 25% from the top */
+    width: 80%; /* 100% width */
+    left:10%;
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+.overlay p {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px !important; /* Override the font-size specified earlier (36px) for all navigation links */
+}
+
+
+.container{
+  background-color: black;
+  position: absolute;
+
+}
+.create{
+  background-color: red;
+  border-top-left-radius: 25vh;
+  border-bottom-left-radius: 25vh;
+  width: 25vh;
+  height:50vh;
+}
+.choose{
+  background: green;
+  border-top-right-radius: 25vh;
+  border-bottom-right-radius: 25vh;
+  width: 25vh;
+  height:50vh;
+}
+footer{
+  position:fixed;
+  bottom:0;
+  text-align:center;
+  z-index:500;
+  color:white;
+  font-weight: 600;
+}
+@media all and (min-height: 0) and (max-width:400px) {
+  .navbar {
+    position: fixed;
+    bottom:0;
+    right:0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .chatboxcontainer{
+    height:50%;
+    width:100%;
+    position: fixed;
+    right:0;
+    bottom:0;
+
+  }
+  .chatbox{
+    position: fixed;
+    width: 100%;
+    height: 50%;
+    right:0;
+    bottom:0;
+  }
+  marquee{
+    width: 100vw;
+  }
+  video{
+    height: inherit;
+    top:5%;
+    width: 100vw;
+    z-index: -10;
+    left:0;
+    position:absolute;
+  }
+marquee{
+  display:none;
+}
+  .form-group{
+    width: 250px;
+  }
+}
